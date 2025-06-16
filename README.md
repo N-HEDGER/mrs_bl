@@ -37,7 +37,11 @@ Code for using the racc for performing batch MRS analyses via slurm. An example 
 ## Requirements
 
 - MATLAB R2023a (module loaded via SLURM)
-- Python 3.10+
+- Python 3.10+ environmment
+
+## Installation
+
+pip install -e .
 
 ## License
 
