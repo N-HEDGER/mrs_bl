@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.pipenv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Cython build artifacts
+*.c
+*.cpp
+*.so
+
+# Test outputs
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+
+# MyPy & Pyright
+.mypy_cache/
+.pyright/
+
+# Bandit
+bandit.yaml
+
+# Pylint & Flake8
+.pylint.d/
+.fla

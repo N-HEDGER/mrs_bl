@@ -1,0 +1,10 @@
+sub = evalin('base', 'sub');
+ses = evalin('base', 'ses');
+VOI = evalin('base', 'VOI');
+filename = sprintf('/home/users/yg916972/Software/%s_%s_%s.txt', sub, ses, VOI);
+fid = fopen(filename, 'w');
+% fprintf(fid, '%s\n', sub);
+fprintf(fid, '%s\n', ses);
+fprintf(fid, '%s\n', sub);
+fprintf(fid, '%s\n', VOI);
+fclose(fid);

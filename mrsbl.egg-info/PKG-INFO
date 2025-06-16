@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mrsbl
+Version: 0.1
+Author: Nicholas Hedger
+Requires-Dist: pyyaml
+Requires-Dist: matplotlib
