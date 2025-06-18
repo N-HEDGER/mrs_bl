@@ -102,7 +102,7 @@ opts.SpecReg = 'RobSpecReg';                  % OPTIONS:    - 'RobSpecReg' (defa
                                               %             - 'RestrSpecReg'
                                               %             - 'none'
 
-opts.savePDF = 1;                             % Create PDF figures
+opts.savePDF = 0;                             % Create PDF figures
 
 % Save LCModel-exportable files for each spectrum?
 opts.saveLCM                = 0;                % OPTIONS:    - 0 (no, default)
@@ -161,7 +161,7 @@ opts.fit.FWHMcoMM3              = 14;
 
 % Specify metabolite data
 % (MANDATORY)
-files       = {sprintf('/Volumes/gold/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/mrs/occipital/mega-press/%s_%s_mega-press.dat', sub, ses, sub, ses)};
+files       = {sprintf('/storage/research/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/mrs/occipital/mega-press/%s_%s_mega-press.dat', sub, ses, sub, ses)};
 
 %files       = {sprintf('/Users/rc923050/Desktop/MRS/BIDS/%s/%s/mrs/occipital/mega-press/%s_%s_mega-press.dat', sub, ses, sub, ses)};
 
@@ -169,12 +169,12 @@ files       = {sprintf('/Volumes/gold/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/mrs/occ
 % (OPTIONAL)
 % Leave empty for GE P-files (.7) - these include water reference data by
 % default.
-files_ref   = {sprintf('/Volumes/gold/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/mrs/occipital/mega-press_ref/%s_%s_mega-press_ref.dat', sub, ses, sub, ses)};
+files_ref   = {sprintf('/storage/research/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/mrs/occipital/mega-press_ref/%s_%s_mega-press_ref.dat', sub, ses, sub, ses)};
 %files_ref   = {sprintf('/Users/rc923050/Desktop/MRS/BIDS/%s/%s/mrs/occipital/mega-press_ref/%s_%s_mega-press_ref.dat', sub, ses, sub, ses)};
 
 % Specify water data for quantification (e.g. short-TE water scan)
 % (OPTIONAL)
-files_w     = {sprintf('/Volumes/gold/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/mrs/occipital/water/%s_%s_water.dat', sub, ses, sub, ses)};
+files_w     = {sprintf('/storage/research/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/mrs/occipital/water/%s_%s_water.dat', sub, ses, sub, ses)};
 %files_w     = {sprintf('/Users/rc923050/Desktop/MRS/BIDS/%s/%s/mrs/occipital/water/%s_%s_water.dat', sub, ses, sub, ses)};
            
 % Specify metabolite-nulled data for quantification
@@ -185,7 +185,7 @@ files_mm     = {};
 % (OPTIONAL)
 % Link to single NIfTI (*.nii) files for Siemens and Philips data
 % Link to DICOM (*.dcm) folders for GE data
-files_nii   = {sprintf('/Volumes/gold/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/anat/%s_%s_T1w.nii.gz', sub, ses, sub, ses)};
+files_nii   = {sprintf('/storage/research/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/anat/%s_%s_T1w.nii.gz', sub, ses, sub, ses)};
 %files_nii   = {sprintf('/Users/rc923050/Desktop/MRS/BIDS/%s/%s/anat/%s_%s_T1w.nii.gz', sub, ses, sub, ses)};
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -200,7 +200,7 @@ files_nii   = {sprintf('/Volumes/gold/cinn/2020/gbgaba/GBGABA_BIDS/%s/%s/anat/%s
 
 % Specify output folder
 % (MANDATORY)
-outputFolder = sprintf('/Volumes/gold/cinn/2020/gbgaba/GBGABA_BIDS/derivatives/MRS/preprocessed/%s/%s/%s_%s_OCC', sub, ses, sub, ses);
+outputFolder = sprintf('/storage/research/cinn/2020/gbgaba/GBGABA_BIDS/derivatives_racc/MRS/preprocessed/%s/%s/%s_%s_OCC', sub, ses, sub, ses);
 %outputFolder = sprintf('/Users/rc923050/Desktop/MRS/preprocessed/%s/%s/%s_%s_OCC', sub, ses, sub, ses);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

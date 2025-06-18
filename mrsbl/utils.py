@@ -18,6 +18,11 @@ for el in ['data', 'docs', 'results', 'scripts', 'tests']:
     p_paths['{el}_dir'.format(el=el)] = os.path.join(base_path, el)
 
 
+def get_job_csv():
+    csv= os.path.join(base_path, 'config', 'MRS_files.csv')
+    return csv
+
+
 def load_pkg_yaml(pkg_yaml=pkg_yaml, **kwargs):
     """_summary_
 
@@ -38,3 +43,4 @@ def load_pkg_yaml(pkg_yaml=pkg_yaml, **kwargs):
         return y[kwargs['subdict']]
     else:
         return y
+

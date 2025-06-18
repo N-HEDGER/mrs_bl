@@ -1,18 +1,19 @@
 slurm:
-  cpus_per_task: 1 # Number of CPUs per task (increase)
-  mem_per_cpu: '1G' # Memory per CPU (increase)
+  cpus_per_task: 2 # Number of CPUs per task (increase)
+  mem_per_cpu: '4G' # Memory per CPU (increase)
   N: '1-1' # Number of tasks to run
   mail_type: 'ALL' 
 
 
 cmds:
+  script_cmd: python {populator} --sub {sub} --ses {ses} --template {template}
   cmd_wcard: '/software/applications/MATLAB/R2023a/bin/matlab -batch "sub=''{sub}''; ses=''{ses}''; VOI=[''{voi}'']; run(''{script}'')"' # Command to run the MATLAB script with wildcard replacements
-
   slurm_pre_commands: ['module load matlab/R2023a'] # Load the required module
   
 
 paths: 
-  full_script_path: '/home/users/yg916972/Software/mrs_bl/mrsbl/skeleton.m' # Full path to the script to run (this is a placeholder to test, direct to the proper script)
+  full_script_path: '/home/users/yg916972/Software/mrs_bl/mrsbl/QualityCheck.m' # Full path to the script to run (this is a placeholder to test, direct to the proper script)
   matlab_path: '/software/applications/MATLAB/R2023a/bin/matlab' # Path to the MATLAB executable
-
+  template_wcard: '/home/users/yg916972/Software/mrs_bl/mrsbl/quality_check_setup_{VOI}.m'
+  populator: '/home/users/yg916972/Software/mrs_bl/mrsbl/populate_script.py'
 

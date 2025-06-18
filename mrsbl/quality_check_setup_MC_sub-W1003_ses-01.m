@@ -8,7 +8,7 @@
 % where to store the pre-processed data, and stipulates additional processing options. 
 
 % Define subject and session for quality check:
- sub = 'sub-W1002';
+ sub = 'sub-W1003';
  ses = 'ses-01';
 
 %   A valid Osprey job contains four distinct classes of items:
